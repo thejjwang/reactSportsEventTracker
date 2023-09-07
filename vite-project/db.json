@@ -1,0 +1,17 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "football",
+      "date": "game at noon",
+      "location": "high school"
+    },
+    {
+      "id": 2,
+      "name": "basketball",
+      "location": "park",
+      "date": "practice tomorrow at 7pm"
+    }
+  ]
+}
+  

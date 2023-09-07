@@ -5,20 +5,40 @@
 // events page
 // event details page
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import NavBar from './components/NavBar'
 import EventsDetailsPage from './components/EventsDetailsPage'
 import EventsPage from './components/EventsPage'
 import HomePage from './components/HomePage'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch("http://localhost:3000/events");
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data)
+          setEvents(data);
+          console.log(events);
+        } else {
+          console.log("Failed to fetch products");
+        }
+      } catch (error) {
+        console.log("Error fetching products:", error);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   return (
     <>
       <NavBar />
       <HomePage />
-      <EventsPage />
+      <EventsPage events={events}/>
       <EventsDetailsPage />
     </>
   )
