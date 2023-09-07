@@ -1,7 +1,7 @@
 const HomePage = () => {
 
     return (
-        <div className="h-screen w-screen flex items-center justify-center">
+        <div id="home" className="h-screen w-screen flex items-center justify-center">
             <div>
                 <h1>Welcome to Sports Event Tracker</h1>
                 <h3>This application is...</h3>
