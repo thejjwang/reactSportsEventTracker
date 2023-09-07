@@ -10,6 +10,7 @@ import NavBar from './components/NavBar'
 import EventsDetailsPage from './components/EventsDetailsPage'
 import EventsPage from './components/EventsPage'
 import HomePage from './components/HomePage'
+import About from './components/About'
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -40,6 +41,7 @@ function App() {
       <HomePage />
       <EventsPage events={events}/>
       <EventsDetailsPage />
+      <About />
     </>
   )
 }
