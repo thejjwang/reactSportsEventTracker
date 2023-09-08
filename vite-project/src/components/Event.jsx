@@ -7,7 +7,7 @@ const Event = ({event}) => {
     }
 
     return (
-        <div className="">
+        <div className="text-center">
             <h3>{event.name}</h3>
             <p>{event.location}</p>
             <p>{event.date}</p>
