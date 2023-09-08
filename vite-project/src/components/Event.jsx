@@ -7,7 +7,7 @@ const Event = ({event, handleDelete}) => {
     }
 
     return (
-        <div className="flex gap-2 capitalize">
+        <div className="flex gap-2 capitalize justify-center items-center">
             <div className="flex gap-10">
                 <h3>{event.name}</h3>
                 <p>{event.location}</p>

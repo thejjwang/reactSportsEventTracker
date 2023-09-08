@@ -29,6 +29,12 @@ function App() {
     fetchEvents();
   }, []);
 
+  //change tab title
+  useEffect(() => {
+    // Update the browser tab title when events change
+    document.title = "Sports Tracker";
+  }, [events]);
+
   const handleAddEvent = async (newEvent) => {
     try {
       const response = await fetch("http://localhost:3000/events", {
