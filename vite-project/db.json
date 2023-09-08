@@ -41,6 +41,41 @@
       "sport": "Basketball",
       "date": "2023-09-27",
       "location": "Arena X"
+    },
+    {
+      "id": 7,
+      "name": "Basketball Event 2",
+      "sport": "Basketball",
+      "date": "2023-09-27",
+      "location": "Arena X"
+    },
+    {
+      "id": 8,
+      "name": "Basketball Event 2",
+      "sport": "Basketball",
+      "date": "2023-09-27",
+      "location": "Arena X"
+    },
+    {
+      "id": 9,
+      "name": "Basketball Event 2",
+      "sport": "Basketball",
+      "date": "2023-09-27",
+      "location": "Arena X"
+    },
+    {
+      "id": 10,
+      "name": "Basketball Event 2",
+      "sport": "Basketball",
+      "date": "2023-09-27",
+      "location": "Arena X"
+    },
+    {
+      "id": 11,
+      "name": "Basketball Event 2",
+      "sport": "Basketball",
+      "date": "2023-09-27",
+      "location": "Arena X"
     }
   ]
 }
