@@ -2,8 +2,8 @@
 
 const Event = ({event}) => {
     //add delete function by its id or something
-    const handleDelete = () => {
-
+    const handleDelete = (id) => {
+        // delete by id
     }
 
     return (

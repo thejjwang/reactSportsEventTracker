@@ -3,18 +3,7 @@
 // add event button will toggle a popup/modal to add event
 import { useState } from "react";
 
-const NavBar = () => {
-    const [inputName, setInputName] = useState("");
-    const [inputDate, setDate] = useState("");
-    const [inputLocation, setLocation] = useState("");
-
-    const handleAdd = () => {
-        // triggers pop up for user inputs 
-        // post request with inputs setting them through state
-        // persisting the data and displaying it properly
-
-    }
-
+const NavBar = ({handleAddEvent}) => {
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
@@ -32,7 +21,7 @@ const NavBar = () => {
         <div className="flex md:order-2">
           <button
           // need to add onclick for add event (probalby modal/popup)
-            onClick={handleAdd}
+            onClick={handleAddEvent}
             type="button"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
