@@ -1,7 +1,17 @@
+// sticky nav bar with links
+// logo and title link to github
+// add event button will toggle a popup/modal to add event
+import { useState } from "react";
+
 const NavBar = () => {
+    const [inputName, setInputName] = useState("");
+    const [inputDate, setDate] = useState("");
+    const [inputLocation, setLocation] = useState("");
 
     const handleAdd = () => {
-
+        // triggers pop up for user inputs 
+        // post request with inputs setting them through state
+        // persisting the data and displaying it properly
 
     }
 

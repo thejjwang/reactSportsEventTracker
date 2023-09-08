@@ -1,7 +1,8 @@
 // On the Events Page, users can view a list of sports events 
 // and click on an event to view its details on the Event Details Page.
-import Event from "./Event";
 
+import Event from "./Event";
+    
 const EventsPage = ({events}) => {
 
     return (

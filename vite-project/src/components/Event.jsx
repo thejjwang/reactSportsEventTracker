@@ -1,6 +1,7 @@
+// component that displays each event and details
 
 const Event = ({event}) => {
-    //add delete function
+    //add delete function by its id or something
     const handleDelete = () => {
 
     }
