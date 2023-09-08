@@ -5,29 +5,8 @@
 import Event from "./Event";
 import { useState, useEffect } from "react";
 
-const EventsPage = () => {
-  const [events, setEvents] = useState([]);
+const EventsPage = ({events}) => {
   const [filteredEvent, setFilteredEvent] = useState("");
-
-  useEffect(() => {
-    const fetchEvents = async () => {
-      try {
-        const response = await fetch("http://localhost:3000/events");
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data);
-          setEvents(data);
-          console.log(events);
-        } else {
-          console.log("Failed to fetch products");
-        }
-      } catch (error) {
-        console.log("Error fetching products:", error);
-      }
-    };
-
-    fetchEvents();
-  }, []);
 
   const handleSelectedEvent = () => {
     

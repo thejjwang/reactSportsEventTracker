@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const AddEventModal = ({ isOpen, onClose, onAddEvent }) => {
   const [eventName, setEventName] = useState("");
+  const [eventSport, setEventSport] = useState("");
   const [eventDate, setEventDate] = useState("");
   const [eventLocation, setEventLocation] = useState("");
 
@@ -9,6 +10,7 @@ const AddEventModal = ({ isOpen, onClose, onAddEvent }) => {
     e.preventDefault();
     const newEvent = {
       name: eventName,
+      sport: eventSport,
       date: eventDate,
       location: eventLocation,
     };
@@ -62,6 +64,23 @@ const AddEventModal = ({ isOpen, onClose, onAddEvent }) => {
                 placeholder="Event Name"
                 value={eventName}
                 onChange={(e) => setEventName(e.target.value)}
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="eventSport"
+              >
+                Event Sport
+              </label>
+              <input
+                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="eventSport"
+                type="text"
+                placeholder="Event Sport"
+                value={eventSport}
+                onChange={(e) => setEventSport(e.target.value)}
                 required
               />
             </div>
