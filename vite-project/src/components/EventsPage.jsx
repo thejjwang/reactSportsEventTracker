@@ -29,6 +29,12 @@ const EventsPage = () => {
     fetchEvents();
   }, []);
 
+  const handleSelectedEvent = () => {
+    
+    
+
+  }
+
   return (
     <div id="events" className="h-screen w-screens bg-sky-300 pt-20">
       <h1 className="text-4xl font-bold mb-4 text-white text-center">
