@@ -6,10 +6,11 @@ import Event from "./Event";
 const EventsPage = ({events}) => {
 
     return (
-        <div id="events" className="h-screen w-screens bg-sky-300 pt-24">
+        <div id="events" className="h-screen w-screens bg-sky-300 pt-20">
+            <h1 className="text-4xl font-bold mb-4 text-white text-center">Events Happening: </h1>
             {events.map((event, index) => (
                 <div className="bg-white m-4 p-4 rounded-lg shadow-md w-64 h-48 flex flex-col justify-center items-center mt-0" key={index}>
-                    <Event event={event}/>
+                    <Event event={event}/>                                          
                 </div>
             ))}
         </div>

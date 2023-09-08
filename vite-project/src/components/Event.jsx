@@ -7,7 +7,7 @@ const Event = ({event}) => {
     }
 
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 capitalize">
             <div>
                 <h3>{event.name}</h3>
                 <p>{event.location}</p>
