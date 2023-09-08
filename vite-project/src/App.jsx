@@ -1,9 +1,3 @@
-// Sports Event Tracker app
-// interface should include:
-// navigation bar
-// home page
-// events page
-// event details page
 import { useState,useEffect } from "react";
 import NavBar from "./components/NavBar";
 import EventsPage from "./components/EventsPage";
@@ -57,11 +51,32 @@ function App() {
     }
   };
   
+  const handleDelete = async (eventId) => {
+    try {
+      // Send a DELETE request to your server API with the event id
+      const response = await fetch(`http://localhost:3000/events/${eventId}`, {
+        method: "DELETE",
+      });
+
+      if (response.ok) {
+        // Remove the deleted event from the events state
+        setEvents((prevEvents) =>
+          prevEvents.filter((event) => event.id !== eventId)
+        );
+        console.log("Event deleted successfully!");
+      } else {
+        console.error("Failed to delete event.");
+      }
+    } catch (error) {
+      console.error("Error deleting event:", error);
+    }
+  };
+
   return (
     <>
       <NavBar handleAddEvent={() => setModalOpen(true)} />
       <HomePage />
-      <EventsPage events={events}/>
+      <EventsPage events={events} handleDelete={handleDelete} />
       <About />
       <AddEventModal
         isOpen={isModalOpen}

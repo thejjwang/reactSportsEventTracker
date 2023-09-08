@@ -5,7 +5,7 @@
 import Event from "./Event";
 import { useState, useEffect } from "react";
 
-const EventsPage = ({events}) => {
+const EventsPage = ({events, handleDelete}) => {
   const [filteredEvent, setFilteredEvent] = useState("");
 
   const handleSelectedEvent = () => {
@@ -27,7 +27,7 @@ const EventsPage = ({events}) => {
             className="bg-white m-4 p-4 rounded-lg shadow-md w-5/6 h-14 flex flex-col justify-center items-center mt-0"
             key={index}
           >
-            <Event event={event} />
+            <Event event={event} handleDelete={handleDelete} />
           </div>
         ))}
       </div>
