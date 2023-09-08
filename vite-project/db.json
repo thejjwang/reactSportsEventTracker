@@ -2,16 +2,45 @@
   "events": [
     {
       "id": 1,
-      "name": "football",
-      "date": "game at noon",
-      "location": "high school"
+      "name": "Football Event 1",
+      "sport": "Football",
+      "date": "2023-09-15",
+      "location": "Stadium A"
     },
     {
       "id": 2,
-      "name": "basketball",
-      "location": "park",
-      "date": "practice tomorrow at 7pm"
+      "name": "Football Event 2",
+      "sport": "Football",
+      "date": "2023-09-18",
+      "location": "Stadium B"
+    },
+    {
+      "id": 3,
+      "name": "Baseball Event 1",
+      "sport": "Baseball",
+      "date": "2023-09-20",
+      "location": "Field X"
+    },
+    {
+      "id": 4,
+      "name": "Basketball Event 1",
+      "sport": "Basketball",
+      "date": "2023-09-22",
+      "location": "Arena Z"
+    },
+    {
+      "id": 5,
+      "name": "Baseball Event 2",
+      "sport": "Baseball",
+      "date": "2023-09-25",
+      "location": "Field Y"
+    },
+    {
+      "id": 6,
+      "name": "Basketball Event 2",
+      "sport": "Basketball",
+      "date": "2023-09-27",
+      "location": "Arena X"
     }
   ]
 }
-  
