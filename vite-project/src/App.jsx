@@ -70,7 +70,7 @@ function App() {
           prevEvents.filter((event) => event.id !== eventId)
         );
         console.log("Event deleted successfully!");
-      } else {
+      } else { 
         console.error("Failed to delete event.");
       }
     } catch (error) {

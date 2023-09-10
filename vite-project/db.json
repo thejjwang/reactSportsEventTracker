@@ -22,13 +22,6 @@
       "location": "Field X"
     },
     {
-      "id": 4,
-      "name": "Basketball Event 1",
-      "sport": "Basketball",
-      "date": "2023-09-22",
-      "location": "Arena Z"
-    },
-    {
       "id": 5,
       "name": "Baseball Event 2",
       "sport": "Baseball",
@@ -97,6 +90,13 @@
       "date": "2023-09-13",
       "location": "asdfasdf",
       "id": 14
+    },
+    {
+      "name": "dad",
+      "sport": "dasDasd",
+      "date": "2023-09-12",
+      "location": "asdasds",
+      "id": 15
     }
   ]
 }
