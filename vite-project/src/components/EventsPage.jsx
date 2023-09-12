@@ -25,7 +25,7 @@ const EventsPage = ({events, handleDelete}) => {
         {events.map((event, index) => (
           <div
             className="bg-white m-4 p-4 rounded-lg shadow-md w-7/8 h-14 flex flex-col justify-center items-center mt-0"
-            key={index}
+            key={index} 
           >
             <Event event={event} handleDelete={handleDelete} />
           </div>

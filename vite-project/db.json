@@ -50,13 +50,6 @@
       "location": "Arena X"
     },
     {
-      "id": 9,
-      "name": "Basketball Event 2",
-      "sport": "Basketball",
-      "date": "2023-09-27",
-      "location": "Arena X"
-    },
-    {
       "id": 10,
       "name": "Basketball Event 2",
       "sport": "Basketball",
@@ -97,6 +90,20 @@
       "date": "2023-09-12",
       "location": "asdasds",
       "id": 15
+    },
+    {
+      "name": "jj",
+      "sport": "wadf",
+      "date": "2023-09-12",
+      "location": "asdf",
+      "id": 16
+    },
+    {
+      "name": "asdfasdf",
+      "sport": "asdfasdfas",
+      "date": "2023-10-04",
+      "location": "sdf",
+      "id": 17
     }
   ]
 }
